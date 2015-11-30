@@ -1,9 +1,8 @@
-var xmlRequest = new XMLHttpRequest();
-xmlRequest.onreadystatechange = function(){
-    if (xmlRequest.readyState===4 && xmlRequest.status===200) {
-        var dogs = JSON.parse(xmlRequest.responseText);
-        console.log(dogs.length);
-        var pt = document.getElementById("petable");
+
+$.get ('http://dog-tracker-api.herokuapp.com/dogs',
+    function(dogs){
+
+        var pt = $("#pet-table-body")[0];
         for (var x = 0; x < dogs.length; x++) {
 
              var row = pt.insertRow();
@@ -28,16 +27,27 @@ xmlRequest.onreadystatechange = function(){
                 var dogRow = x;
                 return function () {
                     document.location.href = 'yourDog.html?id=' + dogs[dogRow].id;
-                    //document.location.href = 'yourDog.html?id=' + dogs[dogRow].id + '&name=' + dogs[dogRow].name;
                 }
             })();
         }
-    }
-};
+        $(function(){
+            $("#petable"). tablesorter();
+        });
 
-xmlRequest.open("GET","http://dog-tracker-api.herokuapp.com/dogs",true);
-xmlRequest.send();
+        var $table = $('#petable');
+        $table.floatThead({
+            scrollContainer: function($table){
+                return $table.closest('.wrapper');
+            }
+        });
+
+        $('.floatThead-container').css("margin","auto");
+        $('.floatThead-container').css("position","relative");
+        $('.size-row').hide();
+
+    });
 
 function home(){
     document.location.href = "home.html";
 }
+

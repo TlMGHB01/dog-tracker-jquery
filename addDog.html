@@ -6,10 +6,16 @@
     <title>Add Your Dog</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/addDog.css">
+    <link rel="stylesheet" href="css/css-shake.css">
+
 </head>
 
 <div id="hdr">
-    <h1 class="header">RACS Dog Tracker <img src="img/dog-prints.png" class="dog-paw-image"></h1>
+    <h1 class="header">RACS Dog Tracker <img src="img/dog-prints.png" class="dog-paw-image shake-slow shake-constant"></h1>
+    <div>
+        <img src="img/dog-house.png" class="dog-paw-image dog-house" onclick="home()">
+        <!--<input type="button"  onclick="home()" value="Home" class="backbutton button-styles homebutton">-->
+    </div>
 </div>
 
 <form class="addDog-form">
@@ -53,6 +59,6 @@
 
 <script src="js/plugins.js"></script>
 <script src="js/addDog.js"></script>
-
+<script src="js/jquery-2.1.4.min.js"></script>
 </body>
 </html>

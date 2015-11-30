@@ -21,8 +21,10 @@
     <label id=fxd class ="custom-label">Is Fixed:</label>
     <span id="fixed"></span>
 
-    <input onclick="back()" type="button" value = "Back" class="backbutton">
-    <input type="button" onclick="home()" value = "Home" class="backbutton button-styles">
+    <!--<input onclick="back()" type="button" value = "Back" class="wordbutton">-->
+    <!--<input type="button" onclick="home()" value = "Home" class="dghsbutton button-styles">-->
+    <img src="img/dog-house.png" class="dog-house" onclick="home()">
+    <span onclick="back()" class="wordbutton"><i>Back</i></span>
 
 </div>
 
@@ -35,7 +37,6 @@
 </div>
 
     <textarea id="drcomments" class="text-area" rows="4" cols="50" placeholder="Comment"></textarea>
-
     <input onclick="svbttn()" type="button" value = "Save" class="button-styles save-button" >
 
 </form>
@@ -44,6 +45,7 @@
     <h3 id="ftr">RACS DogTracker 2015</h3>
 </div>
 
+<script src="js/jquery-2.1.4.min.js"></script>
 <script src="js/dogDiet.js"></script>
 <script src="js/formTemplate.js"></script>
 

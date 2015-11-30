@@ -40,9 +40,10 @@ h2{
     margin-right:22px;
     margin-top: -49px;
     float: right;
+    cursor: pointer;
 }
 
-.header{
+.page-header{
     background-color: rgba(121, 255, 24, 0.65);
     font-family: fantasy;
     color: #6f564c;
@@ -52,7 +53,7 @@ h2{
     font-size:59px;
 }
 
-tr:not(:first-child):hover {
+tr:hover {
     background-color: rgba(255, 32, 69, 0.06);
 }
 
@@ -66,20 +67,20 @@ tr:not(:first-child):hover {
 }
 
  th{
-    border: 1px solid rgba(121, 255, 24, 0.65);
+     cursor: pointer;
+    /*border: 1px solid rgba(121, 255, 24, 0.65);*/
     background-color: rgba(117, 255, 22, 0.45);
+
 }
 
  table{
-    border: 1px solid rgba(121, 255, 24, 0.65);
-    background-color: rgba(121, 255, 24, 0.2);
+    border: 1px solid rgb(99, 255, 71);
+    background-color: rgb(236, 255, 223);
     color: #6f564c;
     font-family: sans-serif;
     font-size:14px;
     border-collapse: collapse;
-    width: 1250px;
-    height: 25px;
-    margin: auto;
+
 }
 
  td {
@@ -109,4 +110,31 @@ tr:not(:first-child):hover {
     font-size:10px;
     padding: 7px 0px 0px 1288px;
     margin: 0px;
+}
+
+#petable thead tr th.headerSortUp {
+    background-color: #efbaa3;
+    cursor: pointer;
+
+}
+
+#petable thead tr th.headerSortDown {
+    background-color: #d6a692;
+    cursor: pointer;
+}
+
+.wrapper{
+    overflow:auto;
+    height: 555px;
+    width: 1250px;
+    margin: auto;
+}
+
+.dog-house {
+    display: inline-block;
+    margin-right:39px;
+    margin-top: -58px;
+    float: right;
+    cursor: pointer;
+
 }

@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="css/dog-table.css">
+    <link rel="stylesheet" href="css/css-shake.css">
 </head>
 <body>
     <div id="hdr">
 
-        <h1 class="header">RACS Dog Tracker <img src="img/dog-prints.png" class="dog-paw-image">
+        <h1 class="page-header">
+            RACS Dog Tracker <img src="img/dog-prints.png" class="dog-paw-image shake-slow shake-constant shake-constant--hover">
         </h1>
+
         <div>
-            <input type="button" onclick="home()" value="Home" class="backbutton button-styles homebutton">
+            <img src="img/dog-house.png" class="dog-paw-image dog-house" onclick="home()">
+            <!--<input type="button"  onclick="home()" value="Home" class="backbutton button-styles homebutton">-->
         </div>
     </div>
 
@@ -21,22 +25,33 @@
         </h2>
     </div>
 
-    <table id="petable">
+    <div class="wrapper">
+        <table id="petable">
 
-        <tr>
-            <th>Name</th>
-            <th>Breed</th>
-            <th>Weight</th>
-            <th>Age</th>
-            <th>Sex</th>
-            <th>Spade/Neutered</th>
-        </tr>
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Breed</th>
+                <th>Weight</th>
+                <th>Age</th>
+                <th>Sex</th>
+                <th>Spade/Neutered</th>
+            </tr>
+            </thead>
 
-    </table>
+            <tbody id="pet-table-body">
+            </tbody>
+
+        </table>
+    </div>
 
     <div id="footer">
         <h3 id="ftr">RACS DogTracker 2015</h3>
     </div>
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery.tablesorter.min.js"></script>
+    <script src="js/jquery.floatThead.js"></script>
     <script src="js/dog-table.js"></script>
 
 </body>

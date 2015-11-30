@@ -21,34 +21,40 @@
     <label id=fxd class ="custom-label">Is Fixed:</label>
     <span id="fixed"></span>
     <span>
-        <input onclick="back()" type="button" value = "Back" class="backbutton button-styles">
-        <input onclick="home()" type="button" value = "Home" class="backbutton button-styles">
+        <img src="img/dog-house.png" class="dog-paw-image dog-house" onclick="home()">
+        <span onclick="back()" class="wordbutton button-styles"><i>Back</i></span>
     </span>
 </div>
 
 <div id="appnt">
-    <h3 class="subHeader">Appointments<img onclick="addAppmnt()" class="plus-button" src="img/plus-button.png"></h3>
+    <h3 id='activateAppt' class="subHeader">Appointments<img onclick="addAppmnt()" class="plus-button hover" src="img/plus-button.png"></h3>
+    <div id="apptBody"> </div>
     <!--<input type="button" onclick="addDog()" value = "Appointment" class = "buttons">-->
 </div>
-
 <div id="meds">
-    <h3 class="subHeader">Medications<img onclick="addMeds()" class="plus-button" src="img/plus-button.png"></h3>
+
+    <h3 id='activateMed' class="subHeader">Medications<img onclick="addMeds()" class="plus-button" src="img/plus-button.png"></h3>
+    <div id="medBody"> </div>
         <!--<input type="button" value = "Medications" class="buttons">-->
 </div>
 <div id="vacc">
-    <h3 class="subHeader">Vaccinations<img onclick="addVacs()" class="plus-button" src="img/plus-button.png"></h3>
-        <!--<input type="button" value = "Vaccinations" class="buttons">-->
+    <h3 id='activateVaccs' class="subHeader">Vaccinations<img onclick="addVacs()" class="plus-button" src="img/plus-button.png"></h3>
+    <div id="vaccBody"> </div>
+    <!--<input type="button" value = "Vaccinations" class="buttons">-->
 </div>
 
 <div id="diet">
-     <h3 class="subHeader">Dietary Restrictions<img onclick="addDiet()" class="plus-button" src="img/plus-button.png"></h3>
-        <!--<input type="button" value = "Dietary Restrictions" class="buttons">-->
+     <h3 id='activateDiet' class="subHeader">Dietary Restrictions<img onclick="addDiet()" class="plus-button" src="img/plus-button.png"></h3>
+    <div id="dietBody"> </div>
+    <!--<input type="button" value = "Dietary Restrictions" class="buttons">-->
 </div>
 
 <div id="footer">
     <h3 id="ftr">RACS DogTracker 2015</h3>
 </div>
+<script src="js/jquery-2.1.4.min.js"></script>
 <script src="js/yourDog.js"></script>
 
 </body>
 </html>
+

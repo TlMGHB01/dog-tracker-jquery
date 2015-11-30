@@ -1,22 +1,30 @@
-var xhr = new XMLHttpRequest();
-var dog;
-xhr.onreadystatechange = function() {
-    if (xhr.status == 200 && xhr.readyState == 4){
-        dog = JSON.parse(xhr.responseText);
+//var xhr = new XMLHttpRequest();
+//var dog;
+//xhr.onreadystatechange = function() {
+//    if (xhr.status == 200 && xhr.readyState == 4){
+//        dog = JSON.parse(xhr.responseText);
 
-        document.getElementById("name").innerHTML = dog.name;
-        document.getElementById("breed").innerHTML = dog.breed;
-        document.getElementById("weight").innerHTML = dog.weight;
-        document.getElementById("age").innerHTML = dog.age;
-        document.getElementById("sex").innerHTML = dog.sex;
+var myId = document.location.search.split('=')[1];
+var dog;
+//xhr.open('GET','http://dog-tracker-api.herokuapp.com/dogs/' + myId, true);
+
+$.get('http://dog-tracker-api.herokuapp.com/dogs/' + myId,
+    function(data){
+        dog = data;
+
+        $("#name")[0].innerHTML = dog.name;
+        $("#breed")[0].innerHTML = dog.breed;
+        $("#weight")[0].innerHTML = dog.weight;
+        $("#age")[0].innerHTML = dog.age;
+        $("#sex")[0].innerHTML = dog.sex;
 
         if (dog.is_spayed_or_neutered) {
-            document.getElementById("fixed").innerHTML = 'Yes';
+            $("#fixed")[0].innerHTML = 'Yes';
         } else {
-            document.getElementById("fixed").innerHTML = 'No';
+            $("#fixed")[0].innerHTML = 'No';
         }
-
-        var appointments = document.getElementById("appnt");
+        //$("#appnt")[0];
+        var appointments = $("#apptBody")[0];
         for (var i = 0; i < dog.appointments.length; i++ ) {
             var containerDiv = document.createElement("div");
             containerDiv.className = "items-container";
@@ -50,7 +58,7 @@ xhr.onreadystatechange = function() {
             newDiv.appendChild(newSpan3);
         }
 
-        var vaccinations = document.getElementById("vacc");
+        var vaccinations = $("#vaccBody")[0];
         for (var v = 0; v < dog.vaccinations.length; v++ ) {
             var containerDiv = document.createElement("div");
             containerDiv.className = "items-container";
@@ -83,7 +91,7 @@ xhr.onreadystatechange = function() {
             newDiv.appendChild(newSpan1);
         }
 
-        var dietary_restrictions = document.getElementById("diet");
+        var dietary_restrictions = $("#dietBody")[0];
         for (var d = 0; d < dog.dietary_restrictions.length; d++ ) {
             var containerDiv = document.createElement("div");
             containerDiv.className = "items-container";
@@ -106,9 +114,8 @@ xhr.onreadystatechange = function() {
             newDiv.appendChild(newLabel1);
             newDiv.appendChild(newSpan1);
         }
-
-        var medications = document.getElementById("meds");
-
+        //$
+        var medications = $("#medBody")[0];
         for (var i = 0; i < dog.medications.length; i++ ) {
             var containerDivB = document.createElement("div");
             containerDivB.className = "items-container";
@@ -141,12 +148,8 @@ xhr.onreadystatechange = function() {
             newDivB.appendChild(newLabelB3);
             newDivB.appendChild(newSpanB3);
         }
-    }
-};
 
-var myId = document.location.search.split('=')[1];
-xhr.open('GET','http://dog-tracker-api.herokuapp.com/dogs/' + myId, true);
-xhr.send();
+});
 
 function addAppmnt() {
     document.location.href = 'addAppointment.html?id=' + myId + '&name=' + dog.name + '&breed=' + dog.breed + '&sex=' + dog.sex + '&weight=' + dog.weight +
@@ -173,3 +176,19 @@ function back(){
 function home(){
     document.location.href = "home.html";
 }
+
+$('#activateAppt').click(function(){
+    $("#apptBody").slideToggle();
+});
+
+$('#activateMed').click(function(){
+    $("#medBody").slideToggle();
+});
+
+    $('#activateVaccs').click(function(){
+        $("#vaccBody").slideToggle();
+    });
+
+        $('#activateDiet').click(function(){
+            $("#dietBody").slideToggle();
+        });

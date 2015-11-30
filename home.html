@@ -7,16 +7,16 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/css-shake.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
 
 
         <div id="hdr">
-            <h1 class="header">RACS Dog Tracker <img src="img/dog-prints.png" class="dog-paw-image"></h1>
+            <h1 class="header">RACS Dog Tracker <img src="img/dog-prints.png" class="dog-paw-image shake-slow shake-constant ">
+
+            </h1>
         </div>
 
         <div id="pageDescription">
@@ -24,6 +24,7 @@
             <h2>  Welcome to Dog Tracker!  A site where you can review your best friends medical history and to remind yourself of
                 their next checkup or to keep track of their vaccinations and other important information.
             </h2>
+
 
             <div class="inLineBlockTop">
                 <input type="button" onclick="addDog()" value = "Add Your Dog" class="buttons">
@@ -35,6 +36,11 @@
                 <span>To view dogs, click the button to the left and fill out the next form.</span>
             </div>
 
+            <div>
+                <span>To return to this home page, click the red dog house.</span>
+                <img src="img/dog-house.png" class="dog-paw-image dog-house" onclick="home()">
+            </div>
+
         </div>
 
         <div id="footer">
@@ -42,6 +48,7 @@
         </div>
 
         <script src="js/main.js"></script>
+        <script src="js/jquery-2.1.4.min.js"></script>
         <!--<script src="js/main.js"></script>-->
 
     </body>

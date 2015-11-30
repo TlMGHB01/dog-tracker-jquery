@@ -31,7 +31,7 @@ function submitMedication() {
         }
     };
 
-    xmlRequests.open('POST','http://dog-tracker-api.herokuapp.com/medications',true);
+    xmlRequests.open('POST','http://dog-tracker-jquery-api.herokuapp.com/medications',true);
     xmlRequests.setRequestHeader('Content-Type', 'application/json');
 
     xmlRequests.send(JSON.stringify(med));

@@ -107,7 +107,7 @@ h1{
     margin-left: 70px;
     margin-top: 20px;
     font-family: fantasy;
-    font-size:22px;
+    font-size:24px;
     padding: 72px 0px 0px 0px;
 }
 
@@ -137,14 +137,16 @@ h1{
 .buttons{
     font-family: sans-serif;
     font-weight: bold;
-    color: rgba(255, 88, 69, 0.41);
-    background-color:white;
+    color: rgb(193, 28, 49);
+    background-color: white;
     font-size: 13px;
     border-radius: 7px;
     border-width: 1px;
+    cursor: pointer;
 }
 
 .dog-paw-image {
+    margin-top: 6px;
     height: 50px;
     width: 50px;
 }
@@ -336,4 +338,10 @@ h1{
     h3 {
         page-break-after: avoid;
     }
+}
+
+.dog-house{
+    margin-left: 3px;
+    margin-top: 25px;
+
 }

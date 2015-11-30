@@ -13,6 +13,19 @@ h1 {
     text-align: center;
 }
 
+.dog-house {
+    display: inline-block;
+    margin-right:39px;
+    margin-top: -58px;
+    float: right;
+    cursor: pointer;
+}
+
+.dog-paw-image {
+    height: 50px;
+    width: 50px;
+}
+
 .savebutton {
     display: inline-block;
     height: 26px;

@@ -137,19 +137,42 @@ form{
     font-size: 18px;
 }
 
-.backbutton {
+/*.backbutton {*/
+    /*display: inline-block;*/
+    /*height: 26px;*/
+    /*margin-right:10px;*/
+    /*width: 99px;*/
+    /*color: white;*/
+    /*float: right;*/
+    /*border: none;*/
+    /*border-radius: 10px;*/
+    /*background: black;*/
+    /*font-size: 16px;*/
+    /*font-family: sans-serif;*/
+/*}*/
+
+.wordbutton {
     display: inline-block;
-    height: 26px;
+    margin-top:5px;
+    margin-right:22px;
+    width: 50px;
+    color: #c11c31;
+    float: right;
+    font-size: 25px;
+    font-family: fantasy;
+    cursor: pointer;
+}
+
+.dog-house {
+    display: inline-block;
+    height: 32px;
     margin-right:34px;
-    width: 99px;
     color: white;
     float: right;
     border: none;
-    border-radius: 10px;
-    background: black;
-    font-size: 16px;
-    font-family: sans-serif;
+    cursor: pointer;
 }
+
 .save-button {
     display: block;
     margin: auto;
@@ -157,13 +180,14 @@ form{
 
 .button-styles {
     height: 26px;
-    width: 99px;
-    color: white;
+    width: 50px;
+    /*color: #c11c31;;*/
+    color: rgb(193, 28, 49);
     border: none;
     border-radius: 10px;
-    background: black;
+    background: white;
     font-size: 16px;
-    font-family: sans-serif;
+    font-family: fantasy;
 }
 
 .main{
@@ -175,3 +199,4 @@ form{
 .clearfix {
     clear: both;
 }
+
