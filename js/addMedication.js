@@ -10,9 +10,9 @@ function submitMedication() {
 
             $.post (
                 'http://dog-tracker-api.herokuapp.com/medications',
-                {medication: med},
+                med,
                 function() {
-                    document.location.href = "yourDog.html?id=" + params[0].split("=")[1];
+                    document.location.href = "yourDog.html?id=" + myId;
         }
     );
 }

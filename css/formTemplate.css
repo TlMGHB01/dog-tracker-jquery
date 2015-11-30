@@ -101,7 +101,7 @@ form{
 }
 
 #ftr{
-    background-color: rgba(121, 255, 24, 0.65);
+    background-color: rgb(165, 255, 95);
     font-family: sans-serif;
     color: #6f564c;
     height:18px;
@@ -117,16 +117,14 @@ form{
     margin:auto;
     float:right;
     display: inline-block;
-    /*margin-bottom: 14px;*/
 }
 
 .label{
-    font-family: sans-serif;
-    font-size: 18px;
+    font-family: fantasy;
+    font-size: 22px;
     width:48%;
     display: inline-block;
     float:left;
-    /*margin-bottom: 14px;*/
 }
 
 .text-area {
@@ -136,20 +134,6 @@ form{
     margin-bottom:8px;
     font-size: 18px;
 }
-
-/*.backbutton {*/
-    /*display: inline-block;*/
-    /*height: 26px;*/
-    /*margin-right:10px;*/
-    /*width: 99px;*/
-    /*color: white;*/
-    /*float: right;*/
-    /*border: none;*/
-    /*border-radius: 10px;*/
-    /*background: black;*/
-    /*font-size: 16px;*/
-    /*font-family: sans-serif;*/
-/*}*/
 
 .wordbutton {
     display: inline-block;
@@ -179,15 +163,15 @@ form{
 }
 
 .button-styles {
-    height: 26px;
-    width: 50px;
-    /*color: #c11c31;;*/
+    font-family: sans-serif;
+    font-weight: bold;
     color: rgb(193, 28, 49);
-    border: none;
-    border-radius: 10px;
-    background: white;
+    background-color: white;
+    border-radius: 7px;
+    border-width: 1px;
+    cursor: pointer;
     font-size: 16px;
-    font-family: fantasy;
+
 }
 
 .main{

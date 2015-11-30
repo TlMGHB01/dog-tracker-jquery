@@ -11,7 +11,7 @@ function svbttn() {
     dietaryrestObj.comment = $("#drcomments")[0].value;
 
           $.post (
-            'http://dog-tracker-api.herokuapp.com/dietary_restriction',
+            'http://dog-tracker-api.herokuapp.com/dietary_restrictions',
             {dietary_restriction: dietaryrestObj},
                 function() {
                     document.location.href = "yourDog.html?id=" + params[0].split("=")[1];

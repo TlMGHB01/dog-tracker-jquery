@@ -185,10 +185,10 @@ $('#activateMed').click(function(){
     $("#medBody").slideToggle();
 });
 
-    $('#activateVaccs').click(function(){
-        $("#vaccBody").slideToggle();
-    });
+$('#activateVaccs').click(function(){
+    $("#vaccBody").slideToggle();
+});
 
-        $('#activateDiet').click(function(){
-            $("#dietBody").slideToggle();
-        });
+$('#activateDiet').click(function(){
+    $("#dietBody").slideToggle();
+});

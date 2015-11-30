@@ -27,19 +27,17 @@ h1 {
 }
 
 .savebutton {
-    display: inline-block;
-    height: 26px;
     margin-top:20px;
     margin-right:34px;
     width: 99px;
-    background: rgba(121, 255, 24, 0.65);
-    border: none;
-    border-radius: 10px;
-    color: white;
-    background: black;
-    font-size: 16px;
     font-family: sans-serif;
-    text-allign:center;
+    font-weight: bold;
+    color: rgb(193, 28, 49);
+    background-color: white;
+    font-size: 13px;
+    border-radius: 7px;
+    border-width: 1px;
+    cursor: pointer;
 }
 
 .centerButton{
@@ -56,8 +54,8 @@ input[type="text"] {
 }
 
 .custom-label {
-    font-family: sans-serif;
-    font-size: 18px;
+    font-family: fantasy;
+    font-size: 22px;
     display: inline-block;
     width: 100px;
 
@@ -67,8 +65,8 @@ input[type="text"] {
 .checkbox_labels{
     color:black;
     width: 350px;
-    font-size: 16px;
-    font-family: sans-serif;
+    font-size: 17px;
+    font-family: fantasy;
     margin-top: 10px;
     margin-left: 140px;
 }

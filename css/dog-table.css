@@ -68,7 +68,6 @@ tr:hover {
 
  th{
      cursor: pointer;
-    /*border: 1px solid rgba(121, 255, 24, 0.65);*/
     background-color: rgba(117, 255, 22, 0.45);
 
 }
@@ -103,7 +102,7 @@ tr:hover {
 }
 
 #ftr{
-    background-color: rgba(121, 255, 24, 0.65);
+    background-color: rgb(165, 255, 95);
     font-family: sans-serif;
     color: #6f564c;
     height:18px;
@@ -125,7 +124,7 @@ tr:hover {
 
 .wrapper{
     overflow:auto;
-    height: 555px;
+    height: 477px;
     width: 1250px;
     margin: auto;
 }
