@@ -18,7 +18,7 @@ form{
     height:383px;
     width:600px;
     margin:auto;
-    background-color: rgba(121, 255, 24, 0.31);
+    background-color: rgba(255, 228, 196, 0.34);
     border-radius: 15px;
     border:2px solid lightgrey;
     margin-top:60px;
@@ -28,7 +28,7 @@ form{
     font-family: fantasy;
     font-size: 25px;
     width: 100%;
-    background-color: rgba(121, 255, 24, 0.31);
+    background-color: bisque;
     padding-top: 6px;
 }
 
@@ -100,7 +100,7 @@ form{
 }
 
 #ftr{
-    background-color: rgb(165, 255, 95);
+    background-color: bisque;
     font-family: sans-serif;
     color: #6f564c;
     height:18px;
