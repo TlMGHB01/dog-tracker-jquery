@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Your Dog</title>
+    <!--<link rel="stylesheet" href="css/bootstrap-theme.min.css">-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/yourDog.css">
+    <link rel="stylesheet" href="css/css-shake.css">
 </head>
 <body>
 
@@ -29,24 +32,22 @@
 <div id="appnt">
 
     <h3 id='activateAppt' class="subHeader">Appointments</h3><img onclick="addAppmnt()"class="plus-button hover" src="img/plus-button.png">
-        <div class="wrapper">
-            <div id="apptBody">
+    <div class="wrapper">
+        <div id="apptBody">
         </div>
     </div>
 </div>
 <div id="meds">
-
     <h3 id='activateMed' class="subHeader">Medications</h3><img onclick="addMeds()"class="plus-button" src="img/plus-button.png">
-        <div class="wrapper">
-            <div id="medBody"> </div>
-        </div>
+    <div class="wrapper">
+        <div id="medBody"> </div>
     </div>
 </div>
 <div id="vacc">
     <h3 id='activateVaccs' class="subHeader">Vaccinations</h3><img onclick="addVacs()"class="plus-button" src="img/plus-button.png">
-        <div class="wrapper">
-            <div id="vaccBody"> </div>
-        </div>
+    <div class="wrapper">
+        <div id="vaccBody"> </div>
+    </div>
 </div>
 
 <div id="diet">
@@ -55,11 +56,134 @@
              <div id="dietBody"></div>
         </div>
 </div>
+    <div id="happydog">
+        <img src="img/Happywotail.png" class="happy"> <img src="img/Htail 2.png" class="tail shake-rotate shake-constant" >
+    </div>
 
 <div id="footer">
     <h3 id="ftr">RACS DogTracker 2015</h3>
 </div>
+
+<div class="modal-edit-appointment modal fade">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                Edit Appointment
+            </div>
+            <div class="modal-body">
+
+            <div>
+                 <label>Date</label>
+                <input id="appointment_date" type="text">
+            </div>
+
+            <div>
+                <label>Location</label>
+                <input id="location" type="text">
+            </div>
+
+             <div>
+                <label>Vet Name</label>
+                <input id="vet_name" type="text">
+             </div>
+    </div>
+            <div class="modal-footer">
+                <button onclick="hideEditAppointment()">Cancel</button>
+                <button onclick="updateAppointment()">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-edit-medication modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                Edit Medication
+            </div>
+
+            <div class="modal-body">
+                <div>
+                    <label>Medication</label>
+                    <input id="med_name" type="text">
+                </div>
+                <div>
+                    <label>Dose</label>
+                    <input id="dose" type="text">
+                </div>
+                <div>
+                    <label class="vertaligntop">Comment</label>
+                    <textarea id="med_comment" class="text-area" rows="2" cols="20" placeholder="Comment"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button onclick="hideEditMedication()">Cancel</button>
+                <button onclick="updateMedication()">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-edit-vaccination modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                Edit Vaccination
+            </div>
+            <div class="modal-body">
+                <div>
+                    <label>Vaccination</label>
+                    <input id="vacc_name" type="text">
+                </div>
+
+                 <div>
+                     <label>Last Inoculation</label>
+                     <input id="last" type="text">
+                </div>
+
+                <div>
+                    <label>Next Inoculation</label>
+                    <input id="next" type="text">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button onclick="hideEditVaccination()">Cancel</button>
+                <button onclick="updateVaccination()">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-edit-dietary-restrictions modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                Edit Dietary Restriction
+                </div>
+                <div class="modal-body">
+                <div>
+                    <label>Proper Food </label>
+                    <input id="food_name" type="text">
+                </div>
+
+                <div>
+                    <label class="vertaligntop">Comment</label>
+                     <textarea id="comment" class="text-area"  placeholder="Comment"></textarea>
+                    <!--<input id="comment" type="text">-->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button onclick="hideEditDietaryRestriction()">Cancel</button>
+               <button onclick="updateDietaryRestriction()">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
 <script src="js/yourDog.js"></script>
 
 </body>

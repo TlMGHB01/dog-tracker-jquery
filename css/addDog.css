@@ -1,16 +1,24 @@
 .addDog-form {
     background-color: rgba(121, 255, 24, 0.31);
-    width:50%;
-    border:3px solid gray;
-    border-radius: 5px;
+    border-radius: 15px;
+    border:2px solid lightgrey;
+    width:555px;
     margin: auto;
     position: absolute;
-    top:91px; left: 0px; right: 0px;
-    height: 475px;
+    top:130px; left: 0px; right: 0px;
+    height: 447px;
 }
 
 h1 {
     text-align: center;
+}
+
+h2{
+    margin-top:25px;
+    margin-bottom:10px;
+    text-align: center;
+    font-size:35px;
+    font-family:sans-serif;
 }
 
 .dog-house {
@@ -27,14 +35,15 @@ h1 {
 }
 
 .savebutton {
-    margin-top:20px;
-    margin-right:34px;
+    margin-top:40px;
+    margin-left: 15px;
+    margin-right: 15px;
     width: 99px;
     font-family: sans-serif;
     font-weight: bold;
     color: rgb(193, 28, 49);
     background-color: white;
-    font-size: 13px;
+    font-size: 16px;
     border-radius: 7px;
     border-width: 1px;
     cursor: pointer;
@@ -50,31 +59,30 @@ input[type="text"] {
     width: 300px;
     font-size: 16px;
     font-family: sans-serif;
-    margin: 12px;
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
 
 .custom-label {
     font-family: fantasy;
     font-size: 22px;
     display: inline-block;
-    width: 100px;
-
-    margin-left:140px;
+    width: 85px;
+    margin: auto;
 }
 
 .checkbox_labels{
     color:black;
     width: 350px;
+    height: 8px;
     font-size: 17px;
     font-family: fantasy;
-    margin-top: 10px;
-    margin-left: 140px;
+    margin: auto;
+    margin-top: 16px;
 }
 
-h2{
-    margin-top:25px;
-    text-align: center;
-    font-size:35px;
-    font-family:sans-serif;
+.inputdiv{
+   width: 416px;
+    margin: auto;
 }
 

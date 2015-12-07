@@ -69,25 +69,23 @@ tr:hover {
  th{
      cursor: pointer;
     background-color: rgba(117, 255, 22, 0.45);
-
 }
 
  table{
     border: 1px solid rgb(99, 255, 71);
-    background-color: rgb(236, 255, 223);
+    background-color: beige;
     color: #6f564c;
     font-family: sans-serif;
     font-size:14px;
     border-collapse: collapse;
-
 }
 
  td {
-    border: 1px solid rgba(121, 255, 24, 0.65);
+    border: 1px solid #c0aa9b;
     cursor: pointer;
     width: 1250px;
     height: 25px;
-    margin-left: 20px;
+    margin-left: 18px;
 }
 
 .dog-paw-image {
@@ -135,5 +133,4 @@ tr:hover {
     margin-top: -58px;
     float: right;
     cursor: pointer;
-
 }

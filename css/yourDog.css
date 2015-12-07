@@ -99,6 +99,7 @@ h2{
     margin-top: 15px;
     display: inline-block;
     width: 22%;
+    /*cursor: pointer;*/
 }
 
 #meds {
@@ -155,6 +156,11 @@ h2{
     border-bottom: 2px solid gray;
     width: 65%;
     margin-left:30%;
+    cursor: pointer;
+}
+
+.items-container div label{
+    cursor: pointer;
 }
 
 .subHeader {
@@ -214,7 +220,74 @@ h2{
 
 .wrapper{
     overflow:auto;
-    height: 534px;
+    height: 464px;
     width: 318px;
 
 }
+.modal-header{
+    font-family: fantasy;
+    font-size: 20px;
+    color: #6f564c;
+    background-color: beige;
+    border: none;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.modal-body {
+    display: inline-block;
+    color: #646464;
+    font-size: 18px;
+    font-family: fantasy;
+}
+
+.modal-body div label {
+    margin-bottom: 20px;
+    width: 152px;
+}
+
+.modal-footer {
+    background-color: beige;
+    border: none;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+input{
+    width: 358px;
+}
+
+textarea{
+    width: 358px;
+}
+
+.vertaligntop{
+    vertical-align: top;
+}
+
+button{
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 75px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(193, 28, 49);
+    background-color: white;
+    font-size: 13px;
+    border-radius: 7px;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+.happy{
+    height: 121px;
+    margin-left: 305px;
+    margin-bottom: 10px;
+}
+.tail{
+    height: 36px;
+    margin-left: -39px;
+    margin-bottom:51px;
+    position: relative;
+}
+
