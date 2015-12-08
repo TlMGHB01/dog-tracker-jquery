@@ -53,10 +53,6 @@ h2{
     font-size:59px;
 }
 
-tr:hover {
-    background-color: thistle;
-}
-
 #pageDscrpt{
     color: #6f564c;
     margin-left: 70px;
@@ -66,18 +62,13 @@ tr:hover {
     padding: 55px 0px 0px 0px;
 }
 
- th{
-     cursor: pointer;
-    background-color: rgba(255, 228, 196, 0.58);
+tr:hover {
+    background-color: thistle;
 }
 
- table{
-    border: rgba(255, 228, 196, 0.58);
-    background-color: seashell;
-    color: #6f564c;
-    font-family: sans-serif;
-    font-size:14px;
-    border-collapse: collapse;
+ th{
+
+    background-color: bisque;
 }
 
  td {
@@ -86,6 +77,15 @@ tr:hover {
     width: 1250px;
     height: 25px;
     margin-left: 18px;
+}
+
+table{
+    border: rgba(255, 228, 196, 0.58);
+    background-color: seashell;
+    color: #6f564c;
+    font-family: sans-serif;
+    font-size:14px;
+    border-collapse: collapse;
 }
 
 .dog-paw-image {
@@ -112,7 +112,6 @@ tr:hover {
 #petable thead tr th.headerSortUp {
     background-color: #efbaa3;
     cursor: pointer;
-
 }
 
 #petable thead tr th.headerSortDown {
